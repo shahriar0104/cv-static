@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "trebucet";
+  src: url("./fonts/trebuc.ttf");
+}
+
+body {
+  max-width: 820px;
+  margin: 12px auto;
+  background-color: #dbdbdb;
+  font-family: "trebucet", "IBM Plex Sans", sans-serif;
+}
+
+p {
+  margin: 0px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.cv-body {
+  background-color: white;
+  padding: 8%;
+}
+
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.profile-photo {
+  text-align: center;
+}
+
+.profile-photo img {
+  max-height: 148px;
+  max-width: 148px;
+  margin: 8px 0 8px 0;
+  border-radius: 50%;
+}
+
+/* .personal-data {
+    text-align: left;
+} */
+
+.section-header {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  font-variant: small-caps;
+}
+
+.section-body {
+  padding: 0 0 0 8px;
+}
+
+/* .flex-body {
+    display: flex;
+} */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.contact span {
+  margin: 8px 48px 0 0;
+  font-variant: small-caps;
+}
+
+.contact a {
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .flex-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+
+  .row-head {
+    min-width: 132px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .row-text {
+    padding-left: 0;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .flex-body {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .row-head {
+    min-width: 156px;
+    text-align: right;
+    font-weight: bold;
+  }
+
+  .row-text {
+    padding-left: 20px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.skill-body {
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.desig {
+  font-weight: lighter;
+  font-size: 13px;
+  color: gray;
+}
+
+.institute {
+  font-weight: normal;
+}
+
+.chip {
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  padding: 0 16px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 20px;
+  background-color: #e2dfdf;
+}
+
+.ul-point {
+  list-style: none;
+  padding: 0;
+}
+
+.li-point {
+  font-weight: bold;
+  padding-left: 1.5em;
+}
+
+.li-point::before {
+  content: "\f0ae";
+  font-family: FontAwesome;
+  color: brown;
+  display: inline-block;
+  margin-left: -1.5em;
+  width: 1.5em;
+}
+
+.li-point-none {
+  padding-left: 1.5em;
+}
+
+.li-point-none::before {
+  display: inline-block;
+  margin-left: -1.5em;
+  width: 1.5em;
+}
+
+li.top {
+  margin-top: 12px;
+}
+
+span.gray-text {
+  color: gray;
+  font-weight: normal;
+}
+
+a.break-word {
+  word-break: break-all;
+}
+
+div.progress {
+  margin: 0 64px 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  max-width: 232px;
+  min-height: 10px;
+  max-height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.1) 33%,
+      rgba(0, 0, 0, 0.1) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.25)),
+    -webkit-linear-gradient(left, #09c, #0f9);
+  /* -webkit-linear-gradient(left, #09c, #f44); */
+
+  border-radius: 20px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-variant: normal;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  font-size: 13px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

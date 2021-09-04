@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Resume</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='app.js'></script>
+</head>
+
+<body>
+    <div class="cv-body">
+        <div class="name">
+            Md. Shadman Shahriar
+        </div>
+
+        <div class="profile-photo">
+            <img src="./assets/pro.jpg" alt="Shadman Shahriar">
+        </div>
+
+        <div class="contact">
+            <span class="tooltip"><i class="fa fa-envelope"></i>
+                <a href="shadman.shahriar@dsinnovators.com" 
+                    onclick="copyURI(event)" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Email
+                </a>
+            </span>
+            <span class="tooltip"><i class="fa fa-phone"></i>
+                <a href="+8801965392623" 
+                    onclick="copyURI(event)" onmouseout="outFunc()">
+                    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>Phone
+                </a>
+            </span>
+            <span><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/shadman-shahriar-50456a175/">LinkedIn</a></span>
+            <span><i class="fa fa-github"></i><a href="https://github.com/shahriar0104">Github</a></span>
+        </div>
+        
+        <div>
+            <p class="section-header">Work Experience</p>
+            <hr>
+            <div class="section-body">
+                <div class="flex-body">
+                    <p class="row-head">Sep 2019 - Aug 2021</p>
+                    <p class="row-text">
+                        <span> <a href="http://frenclub.com/welcome/">Frenclub Mobile</a></span>
+                        <span class="desig">Software Engineer</span>
+                    </p>
+                </div>
+                <div class="flex-body">
+                    <p class="row-head">Sep 2021 - Present</p>
+                    <p class="row-text">
+                        <span> <a href="http://dsinnovators.com/">Dynamic Solution Innovators</a></span>
+                        <span class="desig">Jr. Software Engineer</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <p class="section-header">Education</p>
+            <hr>
+            <div class="section-body">
+                <div class="flex-body">
+                    <p class="row-head">Dec 2019</p>
+                    <p class="row-text">
+                        <span>BSC in CSE</span>
+                        <span class="institute">Military Institute of Science & Technology, Dhaka</span>
+                        <span>Thesis: “A Decision Support System for Cardiovascular ICU Patients”</span>
+                    </p>
+                </div>
+                <div class="flex-body">
+                    <p class="row-head">Jun 2013</p>
+                    <p class="row-text">
+                        <span>HSC in Science</span>
+                        <span class="institute">Notre Dame College, Dhaka</span>
+                    </p>
+                </div>
+                <div class="flex-body">
+                    <p class="row-head">Apr 2011</p>
+                    <p class="row-text">
+                        <span>SSC in Science</span>
+                        <span class="institute">Civil Aviation High School, Dhaka</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div>
+            <p class="section-header">Skills</p>
+            <hr>
+            <div class="section-body">
+                <div class="flex-body skill-body">
+
+                    <div class="progress">
+                        <label for="java">Java</label>
+                        <progress class="progress" id="java" value="75" max="100"> 75% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="typescript">TypeScript</label>
+                        <progress class="progress" id="typescript" value="70" max="100"> 70% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="javaScript">JavaScript</label>
+                        <progress class="progress" id="javaScript" value="60" max="100"> 60% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="c-cpp">C/C++</label>
+                        <progress class="progress" id="c-cpp" value="35" max="100"> 35% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="angular">Angular</label>
+                        <progress class="progress" id="angular" value="85" max="100"> 85% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="android">Android</label>
+                        <progress class="progress" id="android" value="80" max="100"> 80% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="node">NodeJs</label>
+                        <progress class="progress" id="node" value="40" max="100"> 40% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="boot">Spring Boot</label>
+                        <progress class="progress" id="boot" value="10" max="100"> 10% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="mysql">MySQL</label>
+                        <progress class="progress" id="mysql" value="60" max="100"> 60% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="mssql">MsSQL</label>
+                        <progress class="progress" id="mssql" value="30" max="100"> 30% </progress>
+                    </div>
+
+                    <div class="progress">
+                        <label for="firebase">Firebase</label>
+                        <progress class="progress" id="firebase" value="30" max="100"> 30% </progress>
+                    </div>
+
+
+                    <!-- <div class="chip">Java</div>
+                    <div class="chip">TypeScript</div>
+                    <div class="chip">JavaScript</div>
+                    <div class="chip">C/C++</div>
+                    <div class="chip">HTML5</div>
+                    <div class="chip">Angular</div>
+                    <div class="chip">Android</div>
+                    <div class="chip">NodeJS</div>
+                    <div class="chip">MySQL</div>
+                    <div class="chip">Oracle</div>
+                    <div class="chip">MsSQL</div>
+                    <div class="chip">Firebase</div> -->
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="section-header">Projects</p>
+            <hr>
+            <div class="section-body">
+                <ul class="ul-point">
+                    <li class="top">
+                        <ul class="ul-point">
+                            <li class="li-point">Power Mobile Daiden
+                                <span class="gray-text">(Order Management system for Daiden Company of
+                                    Malaysia)</span>
+                            </li>
+                            <li class="li-point-none"> <a href="http://powermobile.com.my/stagingpdtsadmin"
+                                    class="break-word">powermobile.com.my/stagingpdtsadmin</a>
+                            </li>
+                            <li class="li-point-none"> <a href="http://powermobile.com.my/stagingpdtsadmin/admin"
+                                    class="break-word">powermobile.com.my/stagingpdtsadmin/admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li class="top">
+                        <ul class="ul-point">
+                            <li class="li-point">Eat Cake Today Webadmin
+                                <span class="gray-text">(Order Management system for Eat Cake Today Company of
+                                    Malaysia)</span>
+                            </li>
+                            <li class="li-point-none"> <a href="http://staging.antdelivery.my/pdtsadmin/signin"
+                                    class="break-word">staging.antdelivery.my/pdtsadmin/signin</a>
+                            </li>
+                            <li class="li-point-none"> <a href="http://antdelivery.my/pdtsadmin"
+                                    class="break-word">antdelivery.my/pdtsadmin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="top">
+                        <ul class="ul-point">
+                            <li class="li-point">Borak
+                                <span class="gray-text">(Chat & Dating App running in Malaysia)</span>
+                            </li>
+                            <li class="li-point-none"> <a href="https://play.google.com/store/apps/details?id=com.frenclub.borak&hl=en"
+                                    class="break-word">play.google.com/store/apps/details?id=com.frenclub.borak&hl=en</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="top">
+                        <ul class="ul-point">
+                            <li class="li-point">Hijama Planet
+                                <span class="gray-text">(Patient appointment management app for Hijama Planet BD)</span>
+                            </li>
+                            <li class="li-point-none"> <a href="https://github.com/shahriar0104/Hijama-Planet"
+                                    class="break-word">github.com/shahriar0104/Hijama-Planet</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="top">
+                        <ul class="ul-point">
+                            <li class="li-point">Book Library
+                                <span class="gray-text">(Book library management & online/offline book reading advantage in app)</span>
+                            </li>
+                            <li class="li-point-none"> <a href="https://github.com/shahriar0104/Book-Library"
+                                    class="break-word">github.com/shahriar0104/Book-Library</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
